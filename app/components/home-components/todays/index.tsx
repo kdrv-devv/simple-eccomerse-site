@@ -76,21 +76,18 @@ const Todays = () => {
             {data.map((value: any) => (
               <div
                 key={value?.id}
-                className="products-card w-full
-                 !h-[350px]"
+                className="products-card w-[250px] h-[330px] flex flex-col justify-between"
               >
-                <div className="card-top bg-white  p-2 flex items-center justify-center">
+                <div className="card-top relative bg-white p-5 flex items-center justify-center h-[170px]">
                   <Image
                     src={`${value.image}`}
-                    width={100}
-                    height={300}
+                    fill
                     alt="ims"
                   />
                 </div>
-                <div className="bg-[#d9d9d9] p-5 flex flex-col gap-3">
-                  <h3 className="font-[500] text-[16px] ">
-                    Sony WH-1000XM5 Wireless Industry Leading Active Noise
-                    Cancelling Headphones
+                <div className="bg-[#d9d9d9] p-5 flex  flex-col gap-3">
+                  <h3 className="font-[500] text-[16px]">
+                    {value.title}
                   </h3>
                   <div className="card-bottom flex items-center justify-between ">
                     <h4 className="font-[700] text-[19px] line-through">
