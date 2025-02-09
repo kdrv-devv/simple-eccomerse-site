@@ -7,7 +7,6 @@ const Home = () => {
     <div>
       <Showcase />
       <Todays />
-      <Login/>
     </div>
   );
 };
